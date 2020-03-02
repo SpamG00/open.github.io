@@ -1,0 +1,64 @@
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   color: rgb(255, 255, 255);
+   font-family: 'Bad Script', sans-serif ;
+}
+
+.slider{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0;
+}
+
+.item{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   flex-basis: 25%;
+   background-color: blueviolet;
+   transition: all 0.2s;
+}
+.item span{
+   font-size: 65px;
+   
+}
+.item:hover{
+   flex-basis: 70%;
+   text-shadow: 0 0 10px #000;
+}
+
+.item-1{
+   background: url(/img/summer_1.jpg) no-repeat center center ;
+   background-size: cover;
+}
+.item-2{
+   background: url(/img/summer-2.jpg) no-repeat center center ;
+   background-size: cover;
+}
+.item-3{
+   background: url(/img/summer-3.jpg) no-repeat center center ;
+   background-size: cover;
+}
+.item-4{
+   background: url(/img/summer-4.jpg) no-repeat center center ;
+   background-size: cover;
+}
+
+@media(max-width: 640px){
+   .slider{
+      height: 100vh;
+      flex-flow: column;
+   }
+   .item{
+      height: 25vh;
+      width: 100px;
+   }
+}
